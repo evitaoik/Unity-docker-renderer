@@ -37,8 +37,9 @@ def main():
 
     video_path = '/app/drone_video.mov'  # Video inside /app directory inside the container
     while True:
-        graphic_data = connection.recv(1024).decode()  # Receive graphic data from Unity
-        if not graphic_data:
+        #graphic_data = connection.recv(1024).decode()  # Receive graphic data from Unity
+        graphic_data = 'EISAI MALAKIA'
+	if not graphic_data:
             break
         print(f"Received graphic data: {graphic_data}")
         overlay_graphics_on_video(video_path, graphic_data)
