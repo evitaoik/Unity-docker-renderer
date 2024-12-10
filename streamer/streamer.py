@@ -39,7 +39,7 @@ def main():
     while True:
         #graphic_data = connection.recv(1024).decode()  # Receive graphic data from Unity
         graphic_data = 'EISAI MALAKIA'
-	if not graphic_data:
+        if not graphic_data:
             break
         print(f"Received graphic data: {graphic_data}")
         overlay_graphics_on_video(video_path, graphic_data)
